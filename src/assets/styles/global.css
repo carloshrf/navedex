@@ -1,0 +1,22 @@
+:root {
+  font-size: 60%;
+  font-family: Montserrat;
+
+  --background: #E5E5E5;
+  --color-primary: #212121;
+  --color-border: #424242
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--background);
+}
