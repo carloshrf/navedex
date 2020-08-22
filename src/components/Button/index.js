@@ -2,9 +2,9 @@ import React from 'react';
 
 import './styles.css';
 
-function Button({label}) {
+function Button({label, type, onClick, ...rest}) {
   return (
-    <button className="button-component">
+    <button  onClick={onClick} type={type} {...rest} className="button-component">
       {label}
     </button>
   );

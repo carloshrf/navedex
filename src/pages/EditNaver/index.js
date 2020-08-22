@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom'
-
 import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -16,7 +14,7 @@ function AddNaver() {
       <Header />
       <main className="main-add-naver">
         <div className="add-naver-title">
-          <Link to="/"><img src={backIcon} alt="voltar"/></Link>
+          <a href="/"><img src={backIcon} alt="voltar"/></a>
           <span>Adicionar Naver</span>
         </div>
 

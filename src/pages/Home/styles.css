@@ -1,6 +1,8 @@
 .home-container {
   height: 100vh;
   width: 100vw;
+
+  animation: fade-in 1s;
 }
 
 .main-home {
@@ -29,4 +31,15 @@
 
   align-content: center;
   align-items: center;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
