@@ -31,17 +31,17 @@ Abaixo seguem algumas amostras das telas web.
 
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/create-naver1.png?raw=true"  width="600"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/create-naver1.png?raw=true"  width="700"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/exclusion-modal1.png?raw=true"  width="300"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/exclusion-modal1.png?raw=true"  width="700"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/home1.png?raw=true"  width="600"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/home1.png?raw=true"  width="700"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/view-naver.png?raw=true"  width="300"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/view-naver.png?raw=true"  width="700"/>
 </p>
