@@ -11,7 +11,7 @@
 
 .add-navers {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .add-navers h1 {
@@ -29,9 +29,41 @@
   justify-content: space-between;
   justify-items: center;
 
-  align-content: center;
-  align-items: center;
+  margin: 0 auto;
+
+  flex-wrap: wrap;
 }
+
+.create-naver {
+  width: 17.6rem;
+  height: 4rem;
+  
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  
+  border: none;
+  outline: none;
+  border-radius: 0;
+
+  background: var(--color-primary);
+  transition: background-color 0.3s, color 0.3s;
+
+  color: var(--color-white);
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.create-naver:hover {
+  cursor: pointer;
+  background: var(--color-background);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
 
 @keyframes fade-in {
   from {

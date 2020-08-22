@@ -1,19 +1,31 @@
+#naver-container {
+  margin-bottom: 2.6rem;
+  max-width: 28.1rem;
+}
+
 .naver-photo {
   margin-bottom: 1.2rem;
+  max-width: 100%;
+}
+
+.naver-name, .naver-job {
+  color: var(--color-primary);
 }
 
 .naver-name {
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color-primary);
 }
 
 .naver-job {
-  color: var(--color-primary);
   font-size: 1.6rem;
 
   line-height: 3rem;
   margin-bottom: 0.5rem;
+}
+
+.naver-name, .naver-job, .naver-photo {
+  cursor: pointer;
 }
 
 .delete-btn, .edit-btn {
@@ -28,4 +40,47 @@
 
 .delete-btn {
   margin-right: 1.1rem;
+}
+
+#modal-naver {
+  display: flex;
+}
+
+.photo-container {
+  max-width: 60rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-container img {
+  max-width: 60rem;
+}
+
+.naver-content {
+  width: 50rem;
+  padding: 4rem 4rem;
+}
+
+.naver-content .modal-name {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--color-black);
+
+  margin-bottom: 1.6rem;
+}
+
+.naver-content .modal-job-role {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.naver-content .modal-label {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.naver-content .modal-detail {
+  font-size: 1.6rem;
+  padding-bottom: 2.5rem;
 }

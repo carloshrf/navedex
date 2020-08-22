@@ -21,7 +21,7 @@ const Route = ({
         ) : (
           <Redirect
             to={{
-              pathname: isPrivate ? '/login' : '/home',
+              pathname: isPrivate ? '/login' : '/',
             }}
           />
         )
