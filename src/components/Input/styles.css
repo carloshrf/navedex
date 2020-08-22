@@ -2,6 +2,11 @@
   font-size: 1.4rem;
 }
 
+.input-block label {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
 .input-block input {
   height: 4rem;
   width: 100%;
