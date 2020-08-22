@@ -8,14 +8,15 @@ import backIcon from '../../assets/images/back-icon.svg';
 
 import './styles.css';
 
-function AddNaver() {
+function EditNaver(props) {
   return (
     <div className="add-naver-container">
       <Header />
+      {console.log(props)}
       <main className="main-add-naver">
         <div className="add-naver-title">
           <a href="/"><img src={backIcon} alt="voltar"/></a>
-          <span>Adicionar Naver</span>
+          <span>Editar Naver</span>
         </div>
 
         <form className="add-naver-form">
@@ -32,4 +33,4 @@ function AddNaver() {
   );
 }
 
-export default AddNaver;
+export default EditNaver;
