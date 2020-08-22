@@ -4,7 +4,9 @@
 
   --background: #E5E5E5;
   --color-primary: #212121;
-  --color-border: #424242
+  --color-border: #424242;
+  --color-white: #FFF;
+  --color-placeholder: #9E9E9E;
 }
 
 * {

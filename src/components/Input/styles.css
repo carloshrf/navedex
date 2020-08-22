@@ -1,0 +1,23 @@
+.input-block {
+  font-size: 1.4rem;
+}
+
+.input-block input {
+  height: 4rem;
+  width: 100%;
+  
+  margin-top: 4px;
+  margin-bottom: 3.2rem;
+  padding: 8px;
+  
+  display: block;
+  
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  outline: none;
+}
+
+.input-block input::placeholder {
+  font-size: 1.6rem;
+  color: var(--color-placeholder);
+}
