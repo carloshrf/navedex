@@ -3,14 +3,14 @@ import { Route as ReactDOMRoute, Redirect } from 'react-router-dom';
 
 import { useAuth } from '../hooks/AuthContext';
 
-function Route({
+const Route = ({
   isPrivate = false, 
-  Component, 
+  component: Component, 
   ...rest
-}) {
+}) => {
   const { userId } = useAuth();
 
-  console.log(!!userId, isPrivate)
+  // console.log(!!userId, isPrivate, Component)
 
   return (
     <ReactDOMRoute
@@ -21,7 +21,7 @@ function Route({
         ) : (
           <Redirect
             to={{
-              pathname: isPrivate ? '/login' : '/',
+              pathname: isPrivate ? '/login' : '/home',
             }}
           />
         )

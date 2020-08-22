@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
 
   const signOut = useCallback(() => {
     localStorage.removeItem('@Naver:token');
-    localStorage.setIremoveItemtem('@Naver:userId');
+    localStorage.removeItem('@Naver:userId');
     localStorage.removeItem('@Naver:email');
 
     setUserData({});

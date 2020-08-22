@@ -22,4 +22,5 @@ html, body, #root {
 
 body {
   background: var(--background);
+  -webkit-font-smoothing: antialiased;
 }

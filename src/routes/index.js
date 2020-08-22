@@ -12,7 +12,7 @@ function Routes() {
   return (
     <Switch>
       <Route path="/login" component={Login} />
-      <Route path="/" component={Home} exact isPrivate />
+      <Route path="/home" exact component={Home} isPrivate />
       <Route path="/create-naver" component={AddNaver} isPrivate />
     </Switch>
   );
