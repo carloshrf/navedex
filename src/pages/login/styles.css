@@ -28,3 +28,7 @@
 .login-box .input-group {
   font-weight: 600;
 }
+
+.input-group button {
+  width: 100%;
+}

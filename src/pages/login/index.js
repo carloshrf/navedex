@@ -18,9 +18,11 @@ function Login() {
           </div>
           <form className="input-group">
             <Input label="E-mail" placeholder="E-mail" type="text" />
+            
             <Input label="Senha" placeholder="Senha" type="password" />
+            
+            <Button label="Entrar" />
           </form>
-          <Button label="Entrar" />
         </div>
       </div>
   );

@@ -1,5 +1,5 @@
-button {
-  width: 100%;
+.button-component {
+  width: 17.6rem;
   height: 4rem;
   
   display: flex;
@@ -12,7 +12,7 @@ button {
   border-radius: 0;
 
   background: var(--color-primary);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 
   color: var(--color-white);
 
@@ -20,7 +20,7 @@ button {
   font-weight: 600;
 }
 
-button:hover {
+.button-component:hover {
   cursor: pointer;
   background: var(--color-background);
   border: 2px solid var(--color-primary);

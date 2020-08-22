@@ -4,7 +4,7 @@ import './styles.css';
 
 function Button({label}) {
   return (
-    <button className="button">
+    <button className="button-component">
       {label}
     </button>
   );
