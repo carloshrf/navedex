@@ -42,10 +42,6 @@
   margin-right: 1.1rem;
 }
 
-#modal-naver {
-  display: flex;
-}
-
 .photo-container {
   max-width: 60rem;
   overflow: hidden;
@@ -83,4 +79,30 @@
 .naver-content .modal-detail {
   font-size: 1.6rem;
   padding-bottom: 2.5rem;
+}
+
+#delete-modal {
+  display: inline-block;
+  width: 60rem;
+  padding: 3rem;
+}
+
+.exclude-label {
+  padding-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+} 
+
+.exclude-warning {
+  font-size: 1.6rem;
+  padding-bottom: 4rem;
+}
+
+.delete-modal-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-modal-button-group button + button {
+  margin-left: 2.2rem;
 }

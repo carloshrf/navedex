@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import Naver from '../../components/Naver';
-import Modal from '../../components/Modal';
 
 import api from '../../services/api';
 

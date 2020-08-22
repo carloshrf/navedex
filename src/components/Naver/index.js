@@ -6,6 +6,7 @@ import editIconImg from '../../assets/images/edit-Icon.svg'
 import deleteIconImg from '../../assets/images/delete-Icon.svg'
 
 import Modal from '../Modal';
+import Button from '../Button';
 
 import { useAuth } from '../../hooks/AuthContext';
 import api from '../../services/api';
@@ -47,7 +48,7 @@ function Naver({naver, deleteNaverFromState}) {
 
       <Link 
         to='#'
-        onClick={deleteNaver} 
+        onClick={handleDeleteToggleModal} 
         className="delete-btn" 
       >
         <img src={deleteIconImg} alt="Delete"/>
@@ -60,7 +61,7 @@ function Naver({naver, deleteNaverFromState}) {
         <img src={editIconImg} alt="edit" />
       </Link>
 
-      <Modal style={{display: 'flex'}} show={viewToggleModal} modalClosed={modalHandler}>
+      <Modal show={viewToggleModal} modalClosed={modalHandler}>
           <div className="photo-container">
             <img src={naver.url} alt={naver.name} onClick={modalHandler} className="photo"/>
           </div>
@@ -74,11 +75,27 @@ function Naver({naver, deleteNaverFromState}) {
             <p className="modal-label">Projetos que participou</p>
             <p className="modal-detail">{naver.project}</p>
           </div>
+          <div className="operation-button-group">
+            <Link 
+              to='#'
+              onClick={handleDeleteToggleModal} 
+              className="delete-btn" 
+            >
+              <img src={deleteIconImg} alt="Delete"/>
+            </Link>
+          </div>
       </Modal>
 
       <Modal show={deleteToggleModal} modalClosed={handleDeleteToggleModal} >
-          Modal de Remoção
-        </Modal>
+          <div id="delete-modal">
+            <p className="exclude-label">Excluir Naver</p>
+            <p className="exclude-warning">Tem certeza que deseja excluir esse naver?</p>
+            <div className="delete-modal-button-group">
+              <Button label="Cancelar" onClick={handleDeleteToggleModal}  />
+              <Button label="Excluir" onClick={deleteNaver} inverted />
+            </div>
+          </div>
+      </Modal>
 
     </div>
   );

@@ -26,3 +26,15 @@
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
+
+.inverted {
+  background: var(--color-background);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.inverted:hover {
+  background: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+}
