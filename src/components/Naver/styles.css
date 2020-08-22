@@ -1,6 +1,8 @@
 #naver-container {
   margin-bottom: 2.6rem;
-  max-width: 28.1rem;
+  /* min-width: 27rem;
+  max-width: 29rem; */
+  width: 100%;
 }
 
 .naver-photo {
@@ -48,13 +50,15 @@
   position: relative;
 }
 
-.photo-container img {
+.photo-container .photo {
   max-width: 60rem;
+  max-height: 60rem;
 }
 
 .naver-content {
   width: 50rem;
-  padding: 4rem 4rem;
+  padding: 4rem 4rem 2rem;
+  overflow-wrap: break-word;
 }
 
 .naver-content .modal-name {
@@ -79,6 +83,11 @@
 .naver-content .modal-detail {
   font-size: 1.6rem;
   padding-bottom: 2.5rem;
+}
+
+.naver-content .operation-button-group {
+  position: absolute;
+  bottom: 2rem;
 }
 
 #delete-modal {

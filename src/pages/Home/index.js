@@ -14,13 +14,18 @@ import './styles.css';
 function Home() {
   const [navers, setNavers] = useState([]);
   const [modalToggle, setModalToggle] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const { token } = useAuth();
 
   useEffect(() => {
+    setIsLoading(true);
     api.get('navers', {
       headers: { authorization: `Bearer ${token}`}
     }).then(response => setNavers(response.data)).catch((err) => alert('Erro ao buscar Navers', err.message));
+    
+    setIsLoading(false);
+
   }, [token]);
 
   const deleteNaver = (id) => {
@@ -46,9 +51,10 @@ function Home() {
         </div>
 
         <div className="navers-list">
-          {navers.length > 0 && navers.map(naver => {
+
+          {navers.length > 0 ? navers.map(naver => {
             return <Naver key={naver.id} naver={naver} deleteNaverFromState={deleteNaver} setDeleteModalToggle={setDeleteModalToggle}/>
-          })}
+          }): !!isLoading ? <h1>Carregando...</h1> : <h1>Não há nenhum Naver registrado :(</h1>}
 
         </div>
 

@@ -7,7 +7,7 @@ function Button({label, type, onClick, inverted=false, ...rest}) {
     <button  
       onClick={onClick} 
       type={type} 
-      className={!!inverted ? 'button-component' : 'button-component inverted'}
+      className={!!inverted ? 'button-component inverted' : 'button-component'}
       {...rest} 
     >
       {label}

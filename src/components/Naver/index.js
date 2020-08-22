@@ -22,7 +22,6 @@ function Naver({naver, deleteNaverFromState}) {
   const modalHandler = (e) => {
     e.preventDefault();
     setViewToggleModal(!viewToggleModal);
-    console.log('aaaaa')
   }
 
   const deleteNaver = async () => {
@@ -74,16 +73,23 @@ function Naver({naver, deleteNaverFromState}) {
             <p className="modal-detail">{naver.admission_date}</p>
             <p className="modal-label">Projetos que participou</p>
             <p className="modal-detail">{naver.project}</p>
-          </div>
-          <div className="operation-button-group">
-            <Link 
-              to='#'
-              onClick={handleDeleteToggleModal} 
-              className="delete-btn" 
-            >
+            <div className="operation-button-group">
+              <Link 
+                to='#'
+                onClick={handleDeleteToggleModal} 
+                className="delete-btn" 
+              >
               <img src={deleteIconImg} alt="Delete"/>
-            </Link>
+              </Link>
+              <Link 
+                to={{pathname: '/edit-naver', state: {naver: 'aaa'}}} 
+                className="edit-btn"
+              >
+                <img src={editIconImg} alt="edit" />
+              </Link>
+            </div>
           </div>
+          
       </Modal>
 
       <Modal show={deleteToggleModal} modalClosed={handleDeleteToggleModal} >
@@ -91,8 +97,8 @@ function Naver({naver, deleteNaverFromState}) {
             <p className="exclude-label">Excluir Naver</p>
             <p className="exclude-warning">Tem certeza que deseja excluir esse naver?</p>
             <div className="delete-modal-button-group">
-              <Button label="Cancelar" onClick={handleDeleteToggleModal}  />
-              <Button label="Excluir" onClick={deleteNaver} inverted />
+              <Button label="Cancelar" onClick={handleDeleteToggleModal} inverted />
+              <Button label="Excluir" onClick={deleteNaver}  />
             </div>
           </div>
       </Modal>

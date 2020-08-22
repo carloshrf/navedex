@@ -57,7 +57,7 @@ function AddNaver() {
           <Input className="time" placeholder="Tempo de empresa" label="Tempo de empresa" onChange={(e) => handleNaverChange('admission_date', e.target)} />
           <Input className="projects" placeholder="Projetos que Participou" label="Projetos que Participou" onChange={(e) => handleNaverChange('project', e.target)}/>
           <Input className="photo" placeholder="URL da foto do Naver" label="URL da foto do Naver" onChange={(e) => handleNaverChange('url', e.target)} />
-          <Button label="Salvar" type="submit" className="submit" />
+          <Button label="Salvar" type="submit" />
         </form>
 
       </main>

@@ -2,11 +2,11 @@
   height: 100vh;
   width: 100vw;
 
-  animation: fade-in 1s;
+  animation: fade-in 0.5s;
 }
 
 .main-home {
-  padding: 0 3.2rem;
+  padding: 0 4rem;
 }
 
 .add-navers {
@@ -23,16 +23,15 @@
 .navers-list {
   width: 100%;
 
-  display: flex;
-  flex: 1;
+  /* display: flex;
+  flex: 1; */
 
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+
   justify-items: center;
 
-  margin: 0 auto;
-
-  box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
 .create-naver {
