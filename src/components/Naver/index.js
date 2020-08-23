@@ -25,6 +25,7 @@ function Naver({naver, deleteNaverFromState}) {
   }
 
   const deleteNaver = async () => {
+
     await api.delete(`navers/${naver.id}`, {
       headers: { authorization: `Bearer ${token}`}
     }).then( response => {
@@ -55,7 +56,7 @@ function Naver({naver, deleteNaverFromState}) {
       </Link>
       
       <Link 
-        to={{pathname: '/edit-naver', state: {naver: 'aaa'}}} 
+        to={{pathname: `/edit-naver/${naver.id}`, state: {naver}}} 
         className="edit-btn"
       >
         <img src={editIconImg} alt="edit" />

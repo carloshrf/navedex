@@ -10,14 +10,12 @@ const Route = ({
 }) => {
   const { userId } = useAuth();
 
-  // console.log(!!userId, isPrivate, Component)
-
   return (
     <ReactDOMRoute
       {...rest}
-      render={() => {
+      render={(props) => {
         return isPrivate === !!userId ? (
-          <Component />
+          <Component props={props} />
         ) : (
           <Redirect
             to={{
