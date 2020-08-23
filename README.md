@@ -9,8 +9,11 @@ Basicamente serão algumas telas onde poderá ser possível logar com uma conta 
 ## 📁Tecnologias
 
 📘 ReactJS
+
 📘 Axios
+
 📘 React Hooks
+
 📘 ContextAPI
 
 ## Como executar?
@@ -37,6 +40,8 @@ yarn start ou npm start
 - No Readme.md do teste, havia a segunte rota post para registro: "navers/create", porém só consegui criar com 0 "/navers".
 
 - Minha ideia inicial seria desenvolver as estruturas com o styled components, porém a construção com a importação direta do CSS é mais rápido, já que minha meta era de concluí-lo até o final do dia seguinte.
+
+- Ah... claro, datas, resta rever a formatação das datas para números inteiros para os campos tempo de empresa e idade.
 
 Abaixo seguem algumas amostras das telas web.
 
