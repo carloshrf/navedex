@@ -30,21 +30,27 @@ para que então os repositórios necessários sejam baixados. Para executar os p
 yarn start ou npm start
 ```
 
+## Dificuldades
+
+Ainda restam algumas configurações, como edição, atualização no texto do modal ao excluir um Naver, ajustes para que a imagem se ajuste no modal de view de Naver, dimensionamento da tela home como organização de parte do código.
+
+No Readme.md do teste, havia a segunte rota post para registro: navers/create, porém só consegui criar com apenas /navers.
+
 Abaixo seguem algumas amostras das telas web.
 
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/create-naver1.png?raw=true"  width="700"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/create-naver1.png?raw=true"  width="900"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/exclusion-modal1.png?raw=true"  width="700"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/exclusion-modal1.png?raw=true"  width="900"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/home1.png?raw=true"  width="700"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/home1.png?raw=true"  width="900"/>
 </p>
 
 <p align="center">
-<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/view-naver.png?raw=true"  width="700"/>
+<img  src="https://github.com/carloshrf/navedex/blob/master/public/preview-pics/view-naver.png?raw=true"  width="900"/>
 </p>
