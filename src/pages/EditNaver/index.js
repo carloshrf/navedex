@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { Link, useHistory } from 'react-router-dom';
+import { format } from 'date-fns';
 
 import Header from '../../components/Header';
 import Input from '../../components/Input';
@@ -32,8 +33,8 @@ const EditNaver = ({props}) => {
         const naverInfo = props.location.state.naver;
     
         setNaver({
-          admission_date: naverInfo.admission_date,
-          birthdate: naverInfo.birthdate,
+          admission_date: format(new Date(naverInfo.admission_date), 'dd/MM/yyyy'),
+          birthdate: format(new Date(naverInfo.birthdate), 'dd/MM/yyyy'),
           job_role: naverInfo.job_role,
           name: naverInfo.name,
           project: naverInfo.project,

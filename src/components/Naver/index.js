@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
+import { format } from 'date-fns';
 
 import editIconImg from '../../assets/images/edit-Icon.svg'
 import deleteIconImg from '../../assets/images/delete-Icon.svg'
@@ -40,6 +41,10 @@ function Naver({naver, deleteNaverFromState}) {
     setDeleteToggleModal(!deleteToggleModal);
   }
 
+  const formatDate = (date) => {
+    return format(new Date(date), 'dd/MM/yyyy');
+  }
+
   return (
     <div id="naver-container">
       <img src={naver.url} alt={naver.name} className="naver-photo" onClick={modalHandler}/>
@@ -70,9 +75,9 @@ function Naver({naver, deleteNaverFromState}) {
             <p className="modal-name">{naver.name}</p>
             <p className="modal-job-role">{naver.job_role}</p>
             <p className="modal-label">Idade</p>
-            <p className="modal-detail">{naver.birthdate}</p>
+            <p className="modal-detail">{formatDate(naver.birthdate)}</p>
             <p className="modal-label">Tempo de empresa</p>
-            <p className="modal-detail">{naver.admission_date}</p>
+            <p className="modal-detail">{formatDate(naver.admission_date)}</p>
             <p className="modal-label">Projetos que participou</p>
             <p className="modal-detail">{naver.project}</p>
             <div className="operation-button-group">
@@ -84,8 +89,7 @@ function Naver({naver, deleteNaverFromState}) {
               <img src={deleteIconImg} alt="Delete"/>
               </Link>
               <Link 
-                to='/edit-naver'
-                params={{casa: 'a'}}
+                to={{pathname: `/edit-naver/${naver.id}`, state: {naver}}} 
                 className="edit-btn"
               >
                 <img src={editIconImg} alt="edit" />
