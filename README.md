@@ -35,7 +35,7 @@ yarn start ou npm start
 
 ## Dificuldades e notas
 
-- Ainda restam algumas configurações, como edição, atualização no texto do modal ao excluir um Naver, ajustes para que a imagem se ajuste no modal de view de Naver como também a organização de parte do código.
+- Ainda restam algumas configurações, como atualização no texto do modal ao excluir um Naver, ajustes para que a imagem se ajuste no modal de view de Naver como também a organização de parte do código.
 
 - No Readme.md do teste, havia a segunte rota post para registro: "navers/create", porém só consegui criar com 0 "/navers".
 
