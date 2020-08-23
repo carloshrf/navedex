@@ -9,6 +9,9 @@ Basicamente serão algumas telas onde poderá ser possível logar com uma conta 
 ## 📁Tecnologias
 
 📘 ReactJS
+📘 Axios
+📘 React Hooks
+📘 ContextAPI
 
 ## Como executar?
 
