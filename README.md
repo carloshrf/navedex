@@ -30,11 +30,13 @@ para que então os repositórios necessários sejam baixados. Para executar os p
 yarn start ou npm start
 ```
 
-## Dificuldades
+## Dificuldades e notas
 
-Ainda restam algumas configurações, como edição, atualização no texto do modal ao excluir um Naver, ajustes para que a imagem se ajuste no modal de view de Naver, dimensionamento da tela home como organização de parte do código.
+- Ainda restam algumas configurações, como edição, atualização no texto do modal ao excluir um Naver, ajustes para que a imagem se ajuste no modal de view de Naver como também a organização de parte do código.
 
-No Readme.md do teste, havia a segunte rota post para registro: navers/create, porém só consegui criar com apenas /navers.
+- No Readme.md do teste, havia a segunte rota post para registro: "navers/create", porém só consegui criar com 0 "/navers".
+
+- Minha ideia inicial seria desenvolver as estruturas com o styled components, porém a construção com a importação direta do CSS é mais rápido, já que minha meta era de concluí-lo até o final do dia seguinte.
 
 Abaixo seguem algumas amostras das telas web.
 

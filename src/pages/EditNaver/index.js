@@ -10,7 +10,7 @@ import backIcon from '../../assets/images/back-icon.svg';
 
 import './styles.css';
 
-function EditNaver(props) {
+const EditNaver = ({...props}) => {
   return (
     <div className="add-naver-container">
       <Header />

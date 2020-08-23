@@ -22,8 +22,8 @@ html, body, #root {
 }
 
 body {
-  max-width: 1980px;
   box-sizing: border-box;
   background: var(--background);
+
   -webkit-font-smoothing: antialiased;
 }

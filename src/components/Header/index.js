@@ -14,10 +14,10 @@ function Header() {
 
   return (
     <header>
-      <div className="logo-group">
+      <Link to="/" className="logo-group">
         <img src={logoImg} alt="Logo" className="logo" />
         <img src={logoNameImg} alt="Logo Name" className="logo-name" />
-      </div>
+      </Link>
       <Link to="/login" onClick={signOut}>Sair</Link>
     </header>
   );

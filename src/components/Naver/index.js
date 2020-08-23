@@ -31,6 +31,7 @@ function Naver({naver, deleteNaverFromState}) {
       console.log('Usuário deletado.')
     });
 
+
     deleteNaverFromState(naver.id);
   }
 
@@ -82,7 +83,8 @@ function Naver({naver, deleteNaverFromState}) {
               <img src={deleteIconImg} alt="Delete"/>
               </Link>
               <Link 
-                to={{pathname: '/edit-naver', state: {naver: 'aaa'}}} 
+                to='/edit-naver'
+                params={{casa: 'a'}}
                 className="edit-btn"
               >
                 <img src={editIconImg} alt="edit" />
