@@ -41,6 +41,8 @@ yarn start ou npm start
 
 - Minha ideia inicial seria desenvolver as estruturas com o styled components, porém a construção com a importação direta do CSS é mais rápido, já que minha meta era de concluí-lo até o final do dia seguinte.
 
+- Ah... claro, datas, resta rever a formatação das datas para números inteiros para os campos tempo de empresa e idade.
+
 Abaixo seguem algumas amostras das telas web.
 
 
