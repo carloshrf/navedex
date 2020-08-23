@@ -16,7 +16,7 @@ function Routes() {
       <Route path="/login" component={Login} />
       <Route path="/edit-naver/:id" component={EditNaver} isPrivate />
       <Route path="/create-naver" component={AddNaver} isPrivate />
-      <Route component={() => (<div>Error 404. Page not found</div>)} />
+      {/* <Route component={() => (<div>Error 404. Page not found</div>)} /> */}
     </Switch>
   );
 }

@@ -79,15 +79,15 @@ const EditNaver = ({props}) => {
   }
 
   return (
-    <div className="add-naver-container">
+    <div className="edit-naver-container">
       <Header />
-      <main className="main-add-naver">
-        <div className="add-naver-title">
+      <main className="main-edit-naver">
+        <div className="edit-naver-title">
           <Link to="/"><img src={backIcon} alt="voltar"/></Link>
           <span>Editar Naver</span>
         </div>
 
-        <form onSubmit={handleEditNaver} className="add-naver-form">
+        <form onSubmit={handleEditNaver} className="edit-naver-form">
           <Input className="grid-1 name" placeholder="Nome" label="Nome" value={naver.name} onChange={(e) => handleNaverChange('name', e.target)} />
           <Input className="grid-2 office" placeholder="Cargo" label="Cargo" value={naver.job_role} onChange={(e) => handleNaverChange('job_role', e.target)} />
           <Input className="grid-1 age" placeholder="idade" label="idade" value={naver.birthdate} onChange={(e) => handleNaverChange('birthdate', e.target)} />

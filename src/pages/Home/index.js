@@ -64,8 +64,8 @@ function Home() {
             return <Naver key={naver.id} naver={naver} deleteNaverFromState={deleteNaver} setDeleteModalToggle={setDeleteModalToggle}/>
           }): 
           !!isLoading 
-          ? <h1 className="warning-navers-message">Carregando...</h1> 
-          : <h1 className="warning-navers-message">Não há nenhum Naver registrado :(</h1>}
+            ? <h1 className="warning-navers-message">Carregando...</h1> 
+            : <h1 className="warning-navers-message">Não há nenhum Naver registrado :(</h1>}
 
         </div>
 
