@@ -1,11 +1,19 @@
 #naver-container {
-  margin-bottom: 2.6rem;
   width: 100%;
+  max-height: 30rem;
+  box-sizing: border-box;
+}
+
+.photo-container {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(214, 217, 210, 0.4);
 }
 
 .naver-photo {
-  margin-bottom: 1.2rem;
   max-width: 100%;
+  max-height: 30rem;
 }
 
 .naver-name, .naver-job {
@@ -46,6 +54,7 @@
   max-width: 60rem;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
 .photo-container .photo {

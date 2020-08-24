@@ -47,8 +47,10 @@ function Naver({naver, deleteNaverFromState}) {
 
   return (
     <div id="naver-container">
-      <img src={naver.url} alt={naver.name} className="naver-photo" onClick={modalHandler}/>
-
+      <div className="photo-container">
+        <img src={naver.url} alt={naver.name} className="naver-photo" onClick={modalHandler}/>
+      </div>
+      
       <p className="naver-name">{naver.name}</p>
       <p className="naver-job">{naver.job_role}</p>
 
