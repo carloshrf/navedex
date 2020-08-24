@@ -51,12 +51,54 @@ function AddNaver() {
         </div>
 
         <form onSubmit={submitNewNaver} className="add-naver-form">
-          <Input className="name" placeholder="Nome" label="Nome" required onChange={(e) => handleNaverChange('name', e.target)} />
-          <Input className="office" placeholder="Cargo" label="Cargo" required onChange={(e) => handleNaverChange('job_role', e.target)} />
-          <Input className="age" placeholder="idade" label="idade" required onChange={(e) => handleNaverChange('birthdate', e.target)} />
-          <Input className="time" placeholder="Tempo de empresa" label="Tempo de empresa" required onChange={(e) => handleNaverChange('admission_date', e.target)} />
-          <Input className="projects" placeholder="Projetos que Participou" label="Projetos que Participou" required onChange={(e) => handleNaverChange('project', e.target)}/>
-          <Input className="photo" placeholder="URL da foto do Naver" label="URL da foto do Naver" required onChange={(e) => handleNaverChange('url', e.target)} />
+          <Input 
+            className="name" 
+            placeholder="Nome" 
+            label="Nome" 
+            required 
+            onChange={(e) => handleNaverChange('name', e.target)} 
+          />
+          
+          <Input 
+            className="office" 
+            placeholder="Cargo" 
+            label="Cargo" 
+            required 
+            onChange={(e) => handleNaverChange('job_role', e.target)} 
+          />
+          
+          <Input 
+            className="age" 
+            placeholder="idade" 
+            label="idade" 
+            required 
+            onChange={(e) => handleNaverChange('birthdate', e.target)} 
+          />
+          
+          <Input 
+            className="time" 
+            placeholder="Tempo de empresa" 
+            label="Tempo de empresa" 
+            required 
+            onChange={(e) => handleNaverChange('admission_date', e.target)} 
+          />
+          
+          <Input 
+            className="projects" 
+            placeholder="Projetos que Participou" 
+            label="Projetos que Participou" 
+            required 
+            onChange={(e) => handleNaverChange('project', e.target)}
+          />
+          
+          <Input 
+            className="photo" 
+            placeholder="URL da foto do Naver" 
+            label="URL da foto do Naver" 
+            required 
+            onChange={(e) => handleNaverChange('url', e.target)} 
+          />
+          
           <Button label="Salvar" type="submit" />
         </form>
 

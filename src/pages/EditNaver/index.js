@@ -88,12 +88,60 @@ const EditNaver = ({props}) => {
         </div>
 
         <form onSubmit={handleEditNaver} className="edit-naver-form">
-          <Input className="grid-1 name" placeholder="Nome" label="Nome" value={naver.name} required onChange={(e) => handleNaverChange('name', e.target)} />
-          <Input className="grid-2 office" placeholder="Cargo" label="Cargo" value={naver.job_role} required onChange={(e) => handleNaverChange('job_role', e.target)} />
-          <Input className="grid-1 age" placeholder="idade" label="idade" value={naver.birthdate} required onChange={(e) => handleNaverChange('birthdate', e.target)} />
-          <Input className="grid-2 time" placeholder="Tempo de empresa" label="Tempo de empresa" value={naver.admission_date} required onChange={(e) => handleNaverChange('admission_date', e.target)} />
-          <Input className="grid-1 projects" placeholder="Projetos que Participou" label="Projetos que Participou" value={naver.project} required onChange={(e) => handleNaverChange('project', e.target)} />
-          <Input className="grid-2 photo" placeholder="URL da foto do Naver" label="URL da foto do Naver" value={naver.url} required onChange={(e) => handleNaverChange('url', e.target)} />
+          <Input 
+            className="grid-1 name" 
+            placeholder="Nome" 
+            label="Nome" 
+            value={naver.name} 
+            required 
+            onChange={(e) => handleNaverChange('name', e.target)} 
+          />
+          
+          <Input 
+            className="grid-2 office" 
+            placeholder="Cargo" 
+            label="Cargo" 
+            value={naver.job_role} 
+            required 
+            onChange={(e) => handleNaverChange('job_role', e.target)} 
+          />
+          
+          <Input 
+            className="grid-1 age" 
+            placeholder="idade" 
+            label="idade" 
+            value={naver.birthdate} 
+            required 
+            onChange={(e) => handleNaverChange('birthdate', e.target)} 
+          />
+          
+          <Input 
+            className="grid-2 time" 
+            placeholder="Tempo de empresa" 
+            label="Tempo de empresa" 
+            value={naver.admission_date} 
+            required 
+            onChange={(e) => handleNaverChange('admission_date', e.target)} 
+          />
+          
+          <Input 
+            className="grid-1 projects" 
+            placeholder="Projetos que Participou" 
+            abel="Projetos que Participou" 
+            value={naver.project} 
+            required 
+            onChange={(e) => handleNaverChange('project', e.target)} 
+          />
+
+          <Input 
+            className="grid-2 photo" 
+            placeholder="URL da foto do Naver" 
+            label="URL da foto do Naver" 
+            value={naver.url} 
+            required 
+            onChange={(e) => handleNaverChange('url', e.target)} 
+          />
+          
           <Button label="Salvar" type="submit" />
         </form>
       </main>
