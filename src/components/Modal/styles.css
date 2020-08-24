@@ -8,6 +8,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
+
   transition: all 0.3s ease-out;
   color: --var(--color-primary);
 }

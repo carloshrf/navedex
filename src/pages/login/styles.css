@@ -44,3 +44,8 @@
     transform: scale(1.0);
   }
 }
+
+#login-fail-warning {
+  text-align: center;
+  color: #FA3E16;
+}

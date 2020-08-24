@@ -13,16 +13,23 @@ import './styles.css';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loginFails, setLoginFails] = useState(false);
 
   const { signIn } = useAuth();
 
-  function authenticate(e) {
+  async function authenticate(e) {
     e.preventDefault();
-
-    signIn({
-      email,
-      password
-    })
+    
+    try {
+      await signIn({
+        email,
+        password
+      });
+    }catch(err) {
+      setLoginFails(true)
+      console.log('Erro', err.message);
+    }
+    
   }
 
   return (
@@ -32,11 +39,15 @@ function Login() {
             <img src={logoImg} alt="Logo"/>
             <img src={logoNameImg} alt="Logo name"/>
           </div>
+          
+          {loginFails && <h2 id="login-fail-warning">E-mail ou senha inválidos</h2>}
+          
           <form onSubmit={authenticate} className="input-group">
             <Input 
               label="E-mail" 
               placeholder="E-mail" 
               type="text" 
+              error={loginFails}
               onChange={(e) => {setEmail(e.target.value)}}
             />
             
@@ -44,8 +55,10 @@ function Login() {
               label="Senha" 
               placeholder="Senha" 
               type="password" 
+              error={loginFails}
               onChange={(e) => {setPassword(e.target.value)}}
             />
+
             
             <Button type="submit" label="Entrar"/>
           </form>

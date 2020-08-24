@@ -2,11 +2,12 @@ import React from 'react';
 
 import './styles.css';
 
-function Index({ label, type="text", placeholder, ...rest}) {
+function Index({ label, type="text", placeholder, error, ...rest}) {
   return (
     <div className="input-block">
       <label>{label}</label>
-      <input placeholder={placeholder} type={type} {...rest}/>
+      {console.log(!!error && 'input-error')}
+      <input className={!!error ? 'input-error' : ''} placeholder={placeholder} type={type} {...rest}/>
     </div>
   );
 }
