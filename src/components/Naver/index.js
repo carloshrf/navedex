@@ -47,7 +47,7 @@ function Naver({naver, deleteNaverFromState}) {
 
   return (
     <div id="naver-container">
-      <div className="photo-container">
+      <div className="photo-container-home">
         <img src={naver.url} alt={naver.name} className="naver-photo" onClick={modalHandler}/>
       </div>
       
