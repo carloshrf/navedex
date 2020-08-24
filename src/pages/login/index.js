@@ -58,7 +58,6 @@ function Login() {
               error={loginFails}
               onChange={(e) => {setPassword(e.target.value)}}
             />
-
             
             <Button type="submit" label="Entrar"/>
           </form>
